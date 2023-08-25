@@ -41,10 +41,10 @@
         @if ($suggested_users)
             <div class="row">
                 <div class="col-auto">
-                    <p class="fw-bold text-secondary">Suggestions For You</p>
+                    <p class="fw-bold text-white">Suggestions For You</p>
                 </div>
                 <div class="col text-end">
-                    <a href="{{route('users.recommendation')}}" class="fw-bold text-dark text-decoration-none">See all</a>
+                    <a href="{{route('users.recommendation')}}" class="fw-bold text-dark text-decoration">See all</a>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
                         @if ($user->avatar)
                             <img src="{{ $user->avatar }}" alt="{{ $user->name }}" class="rounded-circle avatar-sm">
                         @else
-                            <i class="fa-solid fa-circle-user text-secondary icon-sm"></i>
+                            <i class="fa-solid fa-circle-user text-white icon-sm"></i>
                         @endif</a>
                     </div>
                     <div class="col ps-0 text-truncate">

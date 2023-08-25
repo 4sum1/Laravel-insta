@@ -23,10 +23,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <h1 class="h5 mb-0">{{ config('app.name') }}</h1>
+                    <h1 class="h5 mb-0 text-white">{{ config('app.name') }}</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -67,12 +67,12 @@
                         @else
                             {{-- Home --}}
                             <li class="nav-item" title="Home">
-                                <a href="{{ route('index') }}" class="nav-link"><i class="fa-solid fa-house text-dark icon-sm"></i></a>
+                                <a href="{{ route('index') }}" class="nav-link"><i class="fa-solid fa-house text-white icon-sm"></i></a>
                             </li>
 
                             {{-- Create Post --}}
                             <li class="nav-item" title="Create Post">
-                                <a href="{{ route('post.create') }}" class="nav-link"><i class="fa-solid fa-circle-plus text-dark icon-sm"></i></a>
+                                <a href="{{ route('post.create') }}" class="nav-link"><i class="fa-solid fa-circle-plus text-white icon-sm"></i></a>
                             </li>
 
                             {{-- Account --}}
@@ -81,7 +81,7 @@
                                     @if (Auth::user()->avatar)
                                         <img src="{{ Auth::user()->avatar }}" alt="{{ Auth::user()->avatar }}" class="rounded-circle avatar-sm">
                                     @else
-                                        <i class="fa-solid fa-circle-user text-dark icon-sm"></i>
+                                        <i class="fa-solid fa-circle-user text-white icon-sm"></i>
                                     @endif
                                 </button>
                                 {{-- means if you have a picture, the picture shows up. If you don't you see icon --}}
